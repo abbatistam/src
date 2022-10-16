@@ -7,7 +7,12 @@ func isPalindrome(text string) {
 
 	for i := len(text) - 1; i >= 0; i-- {
 		textReverse += string(text[i])
+	}
 
+	if text == textReverse {
+		fmt.Println("Es palindromo")
+	} else {
+		fmt.Println("No es palindromo")
 	}
 
 }
@@ -45,4 +50,5 @@ func main() {
 		fmt.Println(i, valor)
 	}
 
+	isPalindrome(("casa"))
 }
